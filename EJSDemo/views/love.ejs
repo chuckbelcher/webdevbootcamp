@@ -1,0 +1,7 @@
+<% include partials/header %>
+<h1>You fell in love with: <%= petName.toUpperCase() %> </h1>
+
+<% if (petName.toLowerCase() === "rusty") { %>
+    <p> Good Choice, Rusty is awesome</p>
+<%  } %>
+<% include partials/footer %>

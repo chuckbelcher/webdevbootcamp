@@ -1,0 +1,10 @@
+<h1>Friends list</h1>
+
+<% friends.forEach(function(friend) { %>
+    <li><%=friend %></li>
+<% }); %>
+
+<form action="/addFriend" method="POST">
+    <input type="text" name="newFriend" placeholder="Name">
+    <button>Submit New Friend</button>
+</form>
